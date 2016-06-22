@@ -1,4 +1,4 @@
-(function(){
+(function() {
   'use strict';
 
   angular
@@ -13,5 +13,4 @@
       templateUrl: 'app/home/home.html'
     });
   }
-
 })();
