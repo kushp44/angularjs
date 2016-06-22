@@ -2,6 +2,10 @@
   margin-top: 8em;
 }
 
+<<<<<<< HEAD
+=======
+/* Home page */
+>>>>>>> aa1f16492fa6b3f298609199d0d3832de5e612eb
 .home h1 {
   margin-bottom: 20px;
 }
@@ -10,7 +14,32 @@
   margin-bottom: 30px;
 }
 
+<<<<<<< HEAD
 .log-in-form {
   border: 1px solid #cacaca;
   padding: 1rem;
   border-radius: 3px; }
+=======
+/* Registration and Login pages */
+.log-in-form {
+  border: 1px solid #cacaca;
+  padding: 1rem;
+  border-radius: 3px;
+}
+
+/* Navbar */
+.title-bar {
+ background: #333;
+ padding: 0.9rem; }
+
+.top-bar {
+ background: #333; }
+ .top-bar ul {
+   background: #333; }
+   .top-bar ul li {
+     background: #333; }
+     .top-bar ul li a {
+       color: #fff; }
+       .menu-text {
+         color: #fff; }
+>>>>>>> aa1f16492fa6b3f298609199d0d3832de5e612eb

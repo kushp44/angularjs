@@ -5,9 +5,45 @@
     .module('mutantApp.auth')
     .controller('AuthController', AuthController);
 
+<<<<<<< HEAD
   AuthController.$inject = [];
 
   function AuthController() {
     var vm = this;
+=======
+  AuthController.$inject = ['$firebaseAuth'];
+
+  function AuthController($firebaseAuth) {
+    var vm = this;
+    var auth = $firebaseAuth();
+
+    vm.register = register;
+    vm.login = login;
+
+    vm.user = {
+      email: '',
+      password: ''
+    };
+
+    function register(user) {
+      return auth.$createUserWithEmailAndPassword(user.email, user.password)
+        .then(function() {
+          vm.login(user);
+        })
+        .catch(function(error) {
+          console.log(error);
+        });
+    }
+
+    function login(user) {
+      return auth.$signInWithEmailAndPassword(user.email, user.password)
+        .then(function(loggedInUser) {
+          console.log(loggedInUser);
+        })
+        .catch(function(error) {
+          console.log(error);
+        });
+    }
+>>>>>>> aa1f16492fa6b3f298609199d0d3832de5e612eb
   }
 })();
