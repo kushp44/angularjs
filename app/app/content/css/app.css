@@ -1,8 +1,8 @@
 #main {
-  margin-top: 5em;
+  margin-top: 8em;
 }
 
-/*Home page*/
+/* Home page */
 .home h1 {
   margin-bottom: 20px;
 }
@@ -11,13 +11,14 @@
   margin-bottom: 30px;
 }
 
-/*Login and register forms*/
+/* Registration and Login pages */
 .log-in-form {
   border: 1px solid #cacaca;
   padding: 1rem;
-  border-radius: 3px; }
+  border-radius: 3px;
+}
 
-/*Navbar*/
+/* Navbar */
 .title-bar {
  background: #333;
  padding: 0.9rem; }

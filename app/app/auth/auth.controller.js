@@ -16,16 +16,13 @@
     vm.user = {
       email: '',
       password: ''
-    }
+    };
 
     function register(user) {
       return authService.register(user)
         .then(function() {
           vm.login(user);
         })
-        // .then(function() {
-        //   return email function
-        // }
         .catch(function(error) {
           console.log(error);
         });
@@ -33,7 +30,7 @@
 
     function login(user) {
       return authService.login(user)
-        .then(function(user) {
+        .then(function(loggedInUser) {
           $state.go('mutantList');
         })
         .catch(function(error) {

@@ -14,7 +14,7 @@
       controller: 'MutantListController',
       controllerAs: 'vm',
       resolve: {
-        user: resolveUser,
+        user: resolveUser
       },
     });
   }
@@ -24,4 +24,5 @@
   function resolveUser(authService) {
     return authService.auth.$requireSignIn();
   }
+
 })();

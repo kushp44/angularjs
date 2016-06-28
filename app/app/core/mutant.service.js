@@ -15,7 +15,7 @@
 
     return service;
 
-    ///////////////
+    /////////////
 
     function Mutant() {
       this.name = '';
@@ -28,6 +28,5 @@
     function mutantsByUser(uid) {
       return $firebaseArray(firebaseDataService.users.child(uid).child('mutants'));
     }
-
   }
 })();
